@@ -11,7 +11,7 @@ provider:
   region: "${env:AWS_REGION}"
   memorySize: 256
   environment:
-    DYNAMODB_TABLE_EXAMPLE: ${self:service}-${opt:stage, self:provider.stage}-example
+    DYNAMODB_TABLE_CURRENCIES: ${self:service}-${opt:stage, self:provider.stage}-currencies
   iamRoleStatements:
     - Effect: Allow
       Action:
@@ -23,7 +23,7 @@ provider:
         - dynamodb:PutItem
         - dynamodb:UpdateItem
         - dynamodb:DeleteItem
-      Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.DYNAMODB_TABLE_EXAMPLE}"
+      Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.DYNAMODB_TABLE_CURRENCIES}"
   logRetentionInDays: 7
 
 custom:
@@ -56,17 +56,21 @@ functions:
 
 resources:
   Resources:
-    ExampleDynamoDBTable:
+    CurrenciesDynamoDBTable:
       Type: 'AWS::DynamoDB::Table'
       DeletionPolicy: Delete
       Properties:
         AttributeDefinitions:
           - AttributeName: id
             AttributeType: S
+          - AttributeName: date
+            AttributeType: N
         KeySchema:
           - AttributeName: id
             KeyType: HASH
-        TableName: ${self:provider.environment.DYNAMODB_TABLE_EXAMPLE}
+          - AttributeName: date
+            KeyType: RANGE
+        TableName: ${self:provider.environment.DYNAMODB_TABLE_CURRENCIES}
         BillingMode: PROVISIONED
         ProvisionedThroughput:
           ReadCapacityUnits: 5

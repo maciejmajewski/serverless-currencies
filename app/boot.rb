@@ -13,7 +13,9 @@ Dotenv.load('.env', '.env.local')
 require_relative 'config/initializers/timezone'
 require_relative 'config/initializers/dynamodb'
 
-require_relative 'models/example_resource'
+require_relative 'currency_code'
+
+require_relative 'models/exchange_rate'
 
 def render(status_code: 200, json:)
   {

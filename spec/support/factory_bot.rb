@@ -2,6 +2,8 @@
 
 require 'factory_bot'
 
+FactoryBot::SyntaxRunner.extend(CurrencyCode)
+
 RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
 

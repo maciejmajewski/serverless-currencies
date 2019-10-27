@@ -67,7 +67,7 @@ yarn build && npx sls client deploy
 - `.env.local` - configuration for local development. Use `.env.local.template`
   to create this file. It contains all env variables that are created by
   `serverless` stack - so they aren't available on localhost, for instance
-  DynamoDB table names (`DYNAMODB_TABLE_EXAMPLE`)
+  DynamoDB table names (`DYNAMODB_TABLE_CURRENCIES`)
 - `.envrc` - project configuration for running Terraform and Serverless.
   Use `.envrc.template` to create this file. It contains env variables exports
   to be set before running `terraform` or `serverless` commands. You can use
