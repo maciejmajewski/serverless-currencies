@@ -1,0 +1,11 @@
+@import '~@angular-mdl/core/scss/material-design-lite';
+
+.currencies-chart-container {
+  margin: 40px;
+
+  .currencies-chart {
+    width: 100%;
+    height: 400px;
+    display: block;
+  }
+}

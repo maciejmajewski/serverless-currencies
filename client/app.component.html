@@ -1,0 +1,25 @@
+<div class="demo-container" mdl-shadow="2">
+  <mdl-layout mdl-layout-fixed-header mdl-layout-header-seamed>
+    <mdl-layout-header>
+      <mdl-layout-header-row>
+        <mdl-layout-title>Currencies</mdl-layout-title>
+        <mdl-layout-spacer></mdl-layout-spacer>
+
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link">Today</a>
+          <a class="mdl-navigation__link">Latest</a>
+          <a class="mdl-navigation__link">History</a>
+        </nav>
+      </mdl-layout-header-row>
+    </mdl-layout-header>
+    <mdl-layout-content>
+      <div class="currencies-chart-container">
+        <highcharts-chart [Highcharts]="Highcharts"
+                          [constructorType]="'stockChart'"
+                          [options]="chartOptions"
+                          class="currencies-chart">
+        </highcharts-chart>
+      </div>
+    </mdl-layout-content>
+  </mdl-layout>
+</div>

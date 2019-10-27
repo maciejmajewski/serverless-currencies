@@ -1,11 +1,30 @@
 {
   "scripts": {
+    "start": "parcel client/index.html --open",
     "build": "parcel build client/index.html -d client/dist"
   },
   "dependencies": {
+    "@angular-mdl/core": "^8.0.0",
+    "@angular/common": "^8.2.12",
+    "@angular/compiler": "^8.2.12",
+    "@angular/core": "^8.2.12",
+    "@angular/forms": "^8.2.12",
+    "@angular/platform-browser": "^8.2.12",
+    "@angular/platform-browser-dynamic": "^8.2.12",
+    "core-js": "^3.3.4",
+    "highcharts": "^7.2.0",
+    "highcharts-angular": "^2.4.0",
+    "rxjs": "^6.5.3",
+    "systemjs": "^6.1.4",
+    "zone.js": "^0.10.2"
+  },
+  "devDependencies": {
+    "@types/node": "^12.11.7",
     "parcel-bundler": "^1.12.4",
+    "sass": "^1.23.1",
     "serverless": "^1.55.1",
     "serverless-finch": "^2.4.3",
-    "serverless-hooks-plugin": "^1.1.0"
+    "serverless-hooks-plugin": "^1.1.0",
+    "typescript": "^3.6.4"
   }
 }

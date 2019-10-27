@@ -179,5 +179,6 @@ build-iPhoneSimulator/
 .rspec_status
 
 client/dist/*
+dist
 
 !.gitkeep
