@@ -2,7 +2,7 @@ export AWS_PROFILE=default
 export AWS_SDK_LOAD_CONFIG=1
 export AWS_REGION=eu-central-1
 
-export SERVERLESS_SERVICE_NAME=serverless-ruby-template
+export SERVERLESS_SERVICE_NAME=serverless-currencies
 export CLIENT_APPLICATION_DOMAIN=example.org
 
 export TF_VAR_serverless_service_name="${SERVERLESS_SERVICE_NAME}"

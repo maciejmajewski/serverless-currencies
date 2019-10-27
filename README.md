@@ -1,6 +1,6 @@
 # Serverless Ruby template
-[![Build Status Ruby](https://github.com/maciejmajewski/serverless-ruby-template/workflows/Ruby/badge.svg)](https://github.com/maciejmajewski/serverless-ruby-template/actions?workflow=Ruby)
-[![Build Status Terraform](https://github.com/maciejmajewski/serverless-ruby-template/workflows/Terraform/badge.svg)](https://github.com/maciejmajewski/serverless-ruby-template/actions?workflow=Terraform)
+[![Build Status Ruby](https://github.com/maciejmajewski/serverless-currencies/workflows/Ruby/badge.svg)](https://github.com/maciejmajewski/serverless-currencies/actions?workflow=Ruby)
+[![Build Status Terraform](https://github.com/maciejmajewski/serverless-currencies/workflows/Terraform/badge.svg)](https://github.com/maciejmajewski/serverless-currencies/actions?workflow=Terraform)
 
 This is template for creating Serverless application with Ruby backend.
 
