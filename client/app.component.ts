@@ -39,6 +39,7 @@ export class AppComponent {
           168.11
         ]
       ],
+      type: 'line',
       tooltip: {
         valueDecimals: 2
       }
